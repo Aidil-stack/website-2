@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Aidil Akbar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: url('foto/073319220958.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        header {
+            text-align: center;
+            padding: 10px;
+        }
+        header h5 {
+            font-size: 2.5em;
+            color: #FF3E3E;
+            background: linear-gradient(90deg, #FF3E3E, #AA0000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: fadeIn 2s ease-in-out;
+            line-height: 1.2;
+            margin: 5px;
+        }
+        nav {
+            text-align: center;
+            margin: 10px 0;
+        }
+        nav a {
+            text-decoration: none;
+            margin: 0 15px;
+            color: #FF3E3E;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #AA0000;
+        }
+        section {
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .about {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .about img {
+            width: 250px;
+            height: auto;
+            border-radius: 50%;
+            border: 5px solid rgba(255, 62, 62, 0.8);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        .about .description {
+            max-width: 500px;
+            text-align: left;
+        }
+        .about h2 {
+            color: #FF3E3E;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .about p {
+            font-size: 1em;
+            line-height: 1.5;
+            color: #f0f0f0;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @media (max-width: 768px) {
+            header h5 {
+                font-size: 2em;
+            }
+            nav a {
+                font-size: 0.9em;
+            }
+            .about {
+                flex-direction: column;
+                text-align: center;
+            }
+            .about .description {
+                max-width: 100%;
+            }
+        }
+        @media (max-width: 480px) {
+            header h5 {
+                font-size: 1.8em;
+            }
+            nav a {
+                margin: 0 10px;
+                font-size: 0.8em;
+            }
+            .about img {
+                width: 200px;
+            }
+            .about p {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h5>Eksplorasi Pengembangan Aplikasi Web</h5>
+        <nav>
+            <a href="dashbord.html">About</a>
+            <a href="portofolio.html">Portfolio</a>
+            <a href="projek.html">Blogs</a>
+            <a href="contack.html">Contact</a>
+        </nav>
+    </header>
+    <section id="about" class="about">
+        <div class="description">
+            <h2>About Me</h2>
+            <p>Nama saya Aidil Akbar, lahir dan besar di salah satu desa di kabupaten Bulukumba. Sekarang, saya sedang melanjut pendidikan di Universitas Islam Makassar yang sudah menempuh pendidikan semester 5 sebagai mahasiswa Teknik Informatika. Sebagai seorang mahasiswa informatika, tentunya keseharian saya penuh dengan banyak proyek pemrograman, salah satunya dalam pengembangan aplikasi berbasis web yang saya kerjakan untuk saat ini.</p>
+        </div>
+        <img src="foto/IMG_6952.PNG" alt="Aidil Akbar">
+    </section>
+</body>
+</html>

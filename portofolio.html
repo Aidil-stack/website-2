@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Aidil Akbar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: url('foto/073319220958.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            color: #FF3E3E;
+            background: linear-gradient(90deg, #FF3E3E, #AA0000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: fadeIn 2s ease-in-out;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            text-decoration: none;
+            margin: 0 15px;
+            color: #FF3E3E;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #AA0000;
+        }
+        section {
+            padding: 20px 40px;
+            box-sizing: border-box;
+        }
+        .portfolio {
+            text-align: center;
+        }
+        .portfolio h2 {
+            font-size: 2em;
+            color: #FF3E3E;
+            margin-bottom: 20px;
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .portfolio-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            transition: transform 0.3s, background 0.3s;
+        }
+        .portfolio-item:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .portfolio-item h3 {
+            color: #FF3E3E;
+            margin-bottom: 10px;
+        }
+        .portfolio-item p {
+            font-size: 0.95em;
+            color: #f0f0f0;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            nav a {
+                font-size: 0.9em;
+            }
+            .portfolio-item p {
+                font-size: 0.9em;
+            }
+        }
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            nav a {
+                margin: 0 10px;
+                font-size: 0.8em;
+            }
+            .portfolio h2 {
+                font-size: 1.5em;
+            }
+            .portfolio-item p {
+                font-size: 0.85em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="dashbord.html">About</a>
+            <a href="portofolio.html">Portfolio</a>
+            <a href="projek.html">Blogs</a>
+            <a href="contack.html">Contact</a>
+        </nav>
+    </header>
+    <section id="portfolio" class="portfolio">
+        <h2>My Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <h3>Deskripsi</h3>
+                <p>Saya lahir dan besar di Kabupaten Bulukumba. Saat ini saya menempuh pendidikan tinggi di Universitas Islam Makassar sebagai mahasiswa Informatika. Selama menjadi mahasiswa, saya sangat tertarik dengan dunia pemrograman, terutama dalam pengembangan aplikasi menggunakan Laravel.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Hobi</h3>
+                <p>Hobi saya adalah petualangan, seperti ekspedisi ke gunung atau menjelajah hutan belantara.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Motto</h3>
+                <p>Teruslah berjalan sesulit apa pun itu, jika tak ingin suatu hari nanti kau dipaksa berlari.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

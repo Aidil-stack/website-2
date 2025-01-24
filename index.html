@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teknik Informatika</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .cover {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('foto/background.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+        }
+        .card {
+            background-color: rgba(30, 30, 30, 0.8); /* Transparansi untuk kartu */
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            max-width: 400px;
+        }
+        .card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 1em;
+            border: 2px solid #ffffff;
+        }
+        .card h1 {
+            font-size: 1.8rem;
+            margin: 0.5em 0;
+            margin-bottom: 0.2rem;
+        }
+        .card h4{
+            margin-top: 0.2rem;
+        }
+        .card p {
+            font-size: 1rem;
+            color: #cccccc;
+        }
+        .card button {
+            margin-top: 1.5em;
+            padding: 0.75em 2em;
+            font-size: 1rem;
+            background-color: #950202;
+            color: #000000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .card button:hover {
+            background-color: #cccccc;
+        }
+    </style>
+</head>
+<body>
+    <!-- Halaman Pembuka -->
+    <section class="cover">
+        <div class="card">
+            <img src="foto/mai.jpg" alt="Foto Profil">
+            <h1 style="color: brown;">Teknik Infomatika</h1>
+            <h4 style="color: brown;">Universitas Islam Makassar</h4>
+            <p> Eksplorasi Pengembangan Aplikasi Web oleh Aidil Akbar mahasiswa Teknik Informatika, Universitas Islam Makassar  </p>
+            <button onclick="scrollToPortfolio()">Jelajahi</button>
+        </div>
+    </section>
+
+    <!-- Skrip untuk Navigasi -->
+    <script>
+        function scrollToPortfolio() {
+            // Fungsi ini akan diarahkan ke bagian "Tentang Saya" atau bagian berikutnya.
+           window.location.href = 'dashbord.html';
+        }
+    </script>
+</body>
+</html>
